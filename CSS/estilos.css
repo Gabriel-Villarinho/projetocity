@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    background-color: rgb(111, 43, 143);
+}
+
+.jogo-base{
+    width: 100%;
+    height: 500px;
+    border-bottom: 20px solid rgb(176, 150, 182);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#4c0575 , #a98eaf );
+    background-image: url('exemplo');
+    background-size: cover;
+}
+
+.player{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.alice{
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+}
+
+.pulo{
+    animation: pulo 500ms ease-out;
+}
+
+.planeta{
+    position: relative;
+    width: 200px;
+    margin-left: 80%;
+    mix-blend-mode: multiply;
+}
+
+.asteroide{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(26, 1, 43);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: asteroide 1.5s infinite linear;
+}
+
+.estrela {
+    width: 30px;
+    height: 30px;
+    background-image: url('estrela.png');
+    background-size: cover;
+    position: absolute;
+    top: 50%; /* Posiciona a estrela no meio verticalmente */
+    left: 50%; /* Posiciona a estrela no meio horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza a estrela */
+}
+
+@keyframes asteroide{
+    from{
+        right: -80px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+.btn-start{
+    margin-top: 10px;
+    margin-left: 45%;
+    width: 150px;
+    height: 70px;
+    background: #130a16;
+    font-size: 20px;
+    color: azure;
+    transition: background 0.5s;
+}
+
+.btn-start:hover{
+    background: #4c0575;
+}
