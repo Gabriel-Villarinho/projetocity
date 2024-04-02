@@ -1,6 +1,6 @@
 //Declarando as variaveis alice e asteroide
 let alice = document.querySelector('.alice')
-let asteroide = document.querySelector('asteroide')
+let asteroide = document.querySelector('.asteroide')
 
 //Criando a função com arrow function
 const pulo = () => {
